@@ -208,7 +208,7 @@ test("invalid discriminator value - unionFallback", () => {
               "path": [
                 "b"
               ],
-              "message": "Invalid input: expected string, received undefined"
+              "message": "Invalid input: Required"
             }
           ]
         ],
@@ -247,7 +247,7 @@ test("valid discriminator value, invalid data", () => {
         "path": [
           "a"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
@@ -509,7 +509,7 @@ test("single element union", () => {
           "c",
           "id"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,

@@ -56,7 +56,7 @@ test("enum exhaustiveness", () => {
         "path": [
           "Salmon"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
@@ -95,7 +95,7 @@ test("literal exhaustiveness", () => {
         "path": [
           "Salmon"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
@@ -134,7 +134,7 @@ test("pipe exhaustiveness", () => {
         "path": [
           "Salmon"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
@@ -173,7 +173,7 @@ test("union exhaustiveness", () => {
         "path": [
           "Salmon"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,

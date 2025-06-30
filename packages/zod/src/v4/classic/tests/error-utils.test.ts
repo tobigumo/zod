@@ -23,7 +23,7 @@ test("regular error", () => {
         "path": [
           "f1"
         ],
-        "message": "Invalid input: expected number, received undefined"
+        "message": "Invalid input: Required"
       },
       {
         "expected": "string",
@@ -31,7 +31,7 @@ test("regular error", () => {
         "path": [
           "f3"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       },
       {
         "expected": "array",
@@ -39,7 +39,7 @@ test("regular error", () => {
         "path": [
           "f4"
         ],
-        "message": "Invalid input: expected array, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
@@ -64,13 +64,13 @@ test(".flatten()", () => {
     {
       "fieldErrors": {
         "f1": [
-          "Invalid input: expected number, received undefined",
+          "Invalid input: Required",
         ],
         "f3": [
-          "Invalid input: expected string, received undefined",
+          "Invalid input: Required",
         ],
         "f4": [
-          "Invalid input: expected array, received undefined",
+          "Invalid input: Required",
         ],
       },
       "formErrors": [],
@@ -97,19 +97,19 @@ test("custom .flatten()", () => {
         "f1": [
           {
             "code": 1234,
-            "message": "Invalid input: expected number, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
         "f3": [
           {
             "code": 1234,
-            "message": "Invalid input: expected string, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
         "f4": [
           {
             "code": 1234,
-            "message": "Invalid input: expected array, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
       },
@@ -141,17 +141,17 @@ test(".format()", () => {
       "_errors": [],
       "f1": {
         "_errors": [
-          "Invalid input: expected number, received undefined",
+          "Invalid input: Required",
         ],
       },
       "f3": {
         "_errors": [
-          "Invalid input: expected string, received undefined",
+          "Invalid input: Required",
         ],
       },
       "f4": {
         "_errors": [
-          "Invalid input: expected array, received undefined",
+          "Invalid input: Required",
         ],
       },
     }
@@ -184,7 +184,7 @@ test("custom .format()", () => {
         "_errors": [
           {
             "code": 1234,
-            "message": "Invalid input: expected number, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
       },
@@ -192,7 +192,7 @@ test("custom .format()", () => {
         "_errors": [
           {
             "code": 1234,
-            "message": "Invalid input: expected string, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
       },
@@ -200,7 +200,7 @@ test("custom .format()", () => {
         "_errors": [
           {
             "code": 1234,
-            "message": "Invalid input: expected array, received undefined",
+            "message": "Invalid input: Required",
           },
         ],
       },

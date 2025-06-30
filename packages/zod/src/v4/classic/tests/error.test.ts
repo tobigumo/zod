@@ -492,7 +492,7 @@ test("inferFlattenedErrors", () => {
     {
       "fieldErrors": {
         "foo": [
-          "Invalid input: expected string, received undefined",
+          "Invalid input: Required",
         ],
       },
       "formErrors": [],

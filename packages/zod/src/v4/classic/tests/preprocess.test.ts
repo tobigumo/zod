@@ -254,7 +254,7 @@ test("preprocess validates with sibling errors", () => {
         "path": [
           "missing"
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       },
       {
         "origin": "string",

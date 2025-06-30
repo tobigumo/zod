@@ -148,7 +148,7 @@ test("input validation error", () => {
         {
           "code": "invalid_type",
           "expected": "string",
-          "message": "Invalid input: expected string, received undefined",
+          "message": "Invalid input: Required",
           "path": [
             0,
           ],

@@ -151,7 +151,7 @@ test("parse should fail given sparse array", () => {
         "path": [
           0
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       },
       {
         "expected": "string",
@@ -159,7 +159,7 @@ test("parse should fail given sparse array", () => {
         "path": [
           1
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       },
       {
         "expected": "string",
@@ -167,7 +167,7 @@ test("parse should fail given sparse array", () => {
         "path": [
           2
         ],
-        "message": "Invalid input: expected string, received undefined"
+        "message": "Invalid input: Required"
       }
     ]],
       "success": false,
