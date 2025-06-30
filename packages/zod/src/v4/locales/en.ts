@@ -73,6 +73,7 @@ const error: () => errors.$ZodErrorMap = () => {
   return (issue) => {
     switch (issue.code) {
       case "invalid_type":
+        if (issue.input === undefined) return "Invalid input: Required";
         return `Invalid input: expected ${issue.expected}, received ${parsedType(issue.input)}`;
 
       case "invalid_value":

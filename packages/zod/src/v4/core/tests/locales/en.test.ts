@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { parsedType } from "../../../locales/en.js";
+import en, { parsedType } from "../../../locales/en.js";
 
 test("parsedType", () => {
   expect(parsedType("string")).toBe("string");
@@ -19,4 +19,12 @@ test("parsedType", () => {
 
   const doubleNullPrototype = Object.create(Object.create(null));
   expect(parsedType(doubleNullPrototype)).toBe("object");
+});
+
+test("returns 'Required' for undefined input", () => {
+  const { localeError } = en();
+  expect(localeError({ code: "invalid_type", input: undefined, expected: "string" })).toBe("Invalid input: Required");
+  expect(localeError({ code: "invalid_type", input: 123, expected: "string" })).toBe(
+    "Invalid input: expected string, received number"
+  );
 });

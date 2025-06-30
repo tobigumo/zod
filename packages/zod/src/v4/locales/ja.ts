@@ -73,6 +73,7 @@ const error: () => errors.$ZodErrorMap = () => {
   return (issue) => {
     switch (issue.code) {
       case "invalid_type":
+        if (issue.input === undefined) return "無効な入力: 必須項目です";
         return `無効な入力: ${issue.expected}が期待されましたが、${parsedType(issue.input)}が入力されました`;
       case "invalid_value":
         if (issue.values.length === 1) return `無効な入力: ${util.stringifyPrimitive(issue.values[0])}が期待されました`;
